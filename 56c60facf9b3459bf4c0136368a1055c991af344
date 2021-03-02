@@ -1,0 +1,174 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5aa22a31_7b41675d",
+        "filename": "Dockerfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2021-03-02T07:28:23Z",
+      "side": 1,
+      "message": "remove nano\nadd  \u0026\u0026 rm -rf /var/lib/apt/lists/*\n\nhttps://docs.docker.com/develop/develop-images/dockerfile_best-practices/",
+      "revId": "56c60facf9b3459bf4c0136368a1055c991af344",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8bf33347_bf5ee2ec",
+        "filename": "Dockerfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2021-03-02T07:28:23Z",
+      "side": 1,
+      "message": "Minimize the number of layers\n\nIn older versions of Docker, it was important that you minimized the number of layers in your images to ensure they were performant. The following features were added to reduce this limitation:\n\n    Only the instructions RUN, COPY, ADD create layers. Other instructions create temporary intermediate images, and do not increase the size of the build.",
+      "revId": "56c60facf9b3459bf4c0136368a1055c991af344",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5d8d5ae6_39880ffe",
+        "filename": "Dockerfile",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2021-03-02T07:28:23Z",
+      "side": 1,
+      "message": "Minimize the number of layers\n\nIn older versions of Docker, it was important that you minimized the number of layers in your images to ensure they were performant. The following features were added to reduce this limitation:\n\n    Only the instructions RUN, COPY, ADD create layers. Other instructions create temporary intermediate images, and do not increase the size of the build.",
+      "revId": "56c60facf9b3459bf4c0136368a1055c991af344",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fd967a33_a7106b61",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2021-03-02T07:28:23Z",
+      "side": 1,
+      "message": "PM Https Server",
+      "revId": "56c60facf9b3459bf4c0136368a1055c991af344",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "862ffacb_5f44f6a3",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2021-03-02T07:28:23Z",
+      "side": 1,
+      "message": "make build",
+      "revId": "56c60facf9b3459bf4c0136368a1055c991af344",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "20260608_447eb935",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2021-03-02T07:28:23Z",
+      "side": 1,
+      "message": "Start PM Http Server",
+      "revId": "56c60facf9b3459bf4c0136368a1055c991af344",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "18a5ab3d_218cc5da",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2021-03-02T07:28:23Z",
+      "side": 1,
+      "message": "make start",
+      "revId": "56c60facf9b3459bf4c0136368a1055c991af344",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9e6648de_72040e46",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2021-03-02T07:28:23Z",
+      "side": 1,
+      "message": "make stop",
+      "revId": "56c60facf9b3459bf4c0136368a1055c991af344",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "841eef7c_a3bc1255",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2021-03-02T07:28:23Z",
+      "side": 1,
+      "message": "... PM Http Server",
+      "revId": "56c60facf9b3459bf4c0136368a1055c991af344",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "348185bb_7a5fac5a",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2021-03-02T07:28:23Z",
+      "side": 1,
+      "message": "make upload-file",
+      "revId": "56c60facf9b3459bf4c0136368a1055c991af344",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
