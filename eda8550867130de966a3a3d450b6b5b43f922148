@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "72c62af8_f7dea1b7",
+        "filename": "pom.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 5098
+      },
+      "writtenOn": "2021-03-05T09:29:57Z",
+      "side": 1,
+      "message": "please change to oparent",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 31,
+        "endChar": 11
+      },
+      "revId": "eda8550867130de966a3a3d450b6b5b43f922148",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
