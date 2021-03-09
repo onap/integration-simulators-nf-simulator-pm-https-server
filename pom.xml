@@ -29,11 +29,15 @@
       <artifactId>oparent</artifactId>
       <version>3.2.0</version>
   </parent>
-
+  <groupId>org.onap</groupId>
   <artifactId>pmhttpsserver</artifactId>
   <version>1.0.0-SNAPSHOT</version>
 
   <properties>
+    <nexusproxy>https://nexus.onap.org</nexusproxy>
+    <snapshotNexusPath>/content/repositories/snapshots/</snapshotNexusPath>
+    <releaseNexusPath>/content/repositories/releases/</releaseNexusPath>
+    <stagingNexusPath>/content/repositories/staging/</stagingNexusPath>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.build.timestamp.format>yyyyMMdd'T'HHmmss</maven.build.timestamp.format>
     <docker.registry>nexus3.onap.org:10003</docker.registry>
