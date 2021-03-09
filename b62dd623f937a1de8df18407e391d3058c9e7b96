@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "97713ba6_ef4fe5ab",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 3433
+      },
+      "writtenOn": "2021-03-09T09:57:54Z",
+      "side": 1,
+      "message": "\u003cgroupId\u003eorg.onap.integration.nfsimulator\u003c/groupId\u003e",
+      "revId": "b62dd623f937a1de8df18407e391d3058c9e7b96",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
