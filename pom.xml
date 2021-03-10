@@ -29,7 +29,7 @@
       <artifactId>oparent</artifactId>
       <version>3.2.0</version>
   </parent>
-  <groupId>org.onap.integration.nfsimulator</groupId>
+  <groupId>org.onap.integration.simulators.nf-simulator.pm-https-server</groupId>
   <artifactId>pmhttpsserver</artifactId>
   <version>1.0.0-SNAPSHOT</version>
 
