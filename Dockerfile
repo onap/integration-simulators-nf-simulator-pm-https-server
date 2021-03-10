@@ -12,7 +12,14 @@ ENV APACHE_LOG_DIR /var/log/apache2
 ENV APACHE_LOCK_DIR /var/lock/apache2
 ENV APACHE_PID_FILE /var/run/apache2.pid
 
-COPY --chown=root:root target/ /
+COPY --chown=root:root resources/local/.htpasswd /usr/local/apache2/passwd/
+COPY --chown=root:root resources/local/upload.php /usr/local/apache2/conf/
+COPY --chown=root:root resources/sites-enabled/000-default.conf /etc/apache2/sites-enabled/000-default.conf
+COPY --chown=root:root resources/ports.conf resources/apache2.conf /etc/apache2/
+COPY --chown=root:root resources/cert/* /etc/apache2/certs/
+COPY --chown=root:root resources/lib/libjwt.so.1.7.0 /usr/lib/x86_64-linux-gnu/libjwt.so.1
+COPY --chown=root:root resources/modules/mod_authnz_jwt.so /usr/local/apache2/modules/mod_authnz_jwt.so
+COPY --chown=root:root resources/mods-enabled/auth_jwt.load /etc/apache2/mods-enabled/auth_jwt.load
 
 RUN chmod 644 /usr/local/apache2/passwd/.htpasswd \
   && chmod 644 /usr/local/apache2/conf/httpd.conf \

@@ -16,7 +16,7 @@ make start
 make stop
 ```
 
-### Use event with PM Https Server
+### Upload file to PM Https Server
 ```
 make upload-file
 ```

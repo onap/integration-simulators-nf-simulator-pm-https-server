@@ -34,6 +34,9 @@
   <version>1.0.0-SNAPSHOT</version>
 
   <properties>
+    <docker-maven-plugin.version>0.34.1</docker-maven-plugin.version>
+    <docker.image.tag>latest</docker.image.tag>
+    <docker.image.name>onap/${project.artifactId}</docker.image.name>
     <nexusproxy>https://nexus.onap.org</nexusproxy>
     <snapshotNexusPath>/content/repositories/snapshots/</snapshotNexusPath>
     <releaseNexusPath>/content/repositories/releases/</releaseNexusPath>
@@ -86,7 +89,7 @@
                             <images>
                                 <image>
                                     <alias>${project.artifactId}</alias>
-                                    <name>${docker-image.namespace}/${docker-image.name.prefix}.${artifactId}</name>
+                                    <name>${onap.nexus.dockerregistry.daily}/${docker.image.name}</name>
                                     <registry>${onap.nexus.dockerregistry.daily}</registry>
                                     <build>
                                         <dockerFileDir>${project.basedir}</dockerFileDir>
