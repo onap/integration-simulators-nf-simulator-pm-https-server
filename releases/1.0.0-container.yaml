@@ -1,0 +1,8 @@
+distribution_type: 'container'
+container_release_tag: '1.0.0'
+project: 'integration-simulators-nf-simulator-pm-https-server'
+log_dir: 'integration-simulators-nf-simulator-pm-https-server-maven-docker-stage-master/17/'
+ref: 47b3effb1fa27df5fe82f2e80ddbdf955a8b6494
+containers:
+  - name: 'org.onap.integration.nfsimulator.pmhttpsserver'
+    version: '1.0.0-STAGE-20210317T084902Z'
