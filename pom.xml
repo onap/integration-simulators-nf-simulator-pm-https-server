@@ -35,6 +35,8 @@
 
   <properties>
     <skipDockerPush>true</skipDockerPush>
+    <docker-image.namespace>onap</docker-image.namespace>
+    <docker-image.name.prefix>org.onap.integration.nfsimulator</docker-image.name.prefix>
     <docker-maven-plugin.version>0.34.1</docker-maven-plugin.version>
     <docker.image.tag>latest</docker.image.tag>
     <docker.image.name>onap/${project.artifactId}</docker.image.name>
@@ -91,7 +93,7 @@
                             <images>
                                 <image>
                                     <alias>${project.artifactId}</alias>
-                                    <name>${onap.nexus.dockerregistry.daily}/${docker.image.name}</name>
+                                    <name>${docker-image.namespace}/${docker-image.name.prefix}.${artifactId}</name>
                                     <registry>${onap.nexus.dockerregistry.daily}</registry>
                                     <build>
                                         <dockerFileDir>${project.basedir}</dockerFileDir>
