@@ -25,9 +25,10 @@ RUN chmod 644 /usr/local/apache2/passwd/.htpasswd \
   && chmod 644 /usr/local/apache2/conf/httpd.conf \
   && chmod 644 /usr/lib/x86_64-linux-gnu/libjwt.so.1 \
   && chmod 644 /usr/local/apache2/modules/mod_authnz_jwt.so \
-  && touch /usr/local/apache2/htdocs/index.html
-CMD if [ -f /etc/apache2/certs/cacert.pem  ]; then cp /etc/apache2/certs/cacert.pem /etc/apache2/certs/truststore.pem; fi \
-    && if [ -f /etc/apache2/certs/cert.pem  ]; then cp /etc/apache2/certs/cert.pem /etc/apache2/certs/keystore.pem; fi \
-    && chmod 777 /usr/local/apache2/htdocs \
-    && cp /usr/local/apache2/conf/upload.php /usr/local/apache2/htdocs/upload.php \
+  && touch /usr/local/apache2/htdocs/index.html \
+  && chmod 777 /usr/local/apache2/htdocs \
+  && cp /usr/local/apache2/conf/upload.php /usr/local/apache2/htdocs/upload.php
+CMD if [ -f /etc/apache2/certs/external/truststore.pem ]; then cp /etc/apache2/certs/external/truststore.pem /etc/apache2/certs/truststore.pem; fi \
+    && if [ -f /etc/apache2/certs/external/keystore.pem  ]; then cp /etc/apache2/certs/external/keystore.pem /etc/apache2/certs/keystore.pem; fi \
+    && if [ -f /etc/apache2/certs/external/key.pem  ]; then cp /etc/apache2/certs/external/key.pem /etc/apache2/certs/key.pem; fi \
     && /usr/sbin/apache2ctl -D FOREGROUND
