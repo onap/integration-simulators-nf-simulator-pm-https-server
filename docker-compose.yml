@@ -1,8 +1,8 @@
-version: "2.1"
+version: "3.5"
 
 services:
   http-server:
-    image: onap/org.onap.integration.simulators.pmhttpsserver
+    image: onap/org.onap.integration.nfsimulator.pmhttpsserver
     ports:
       - "32080:80"
       - "8080:8080"
