@@ -31,4 +31,7 @@ RUN chmod 644 /usr/local/apache2/passwd/.htpasswd \
 CMD if [ -f /etc/apache2/certs/external/truststore.pem ]; then cp /etc/apache2/certs/external/truststore.pem /etc/apache2/certs/truststore.pem; fi \
     && if [ -f /etc/apache2/certs/external/keystore.pem  ]; then cp /etc/apache2/certs/external/keystore.pem /etc/apache2/certs/keystore.pem; fi \
     && if [ -f /etc/apache2/certs/external/key.pem  ]; then cp /etc/apache2/certs/external/key.pem /etc/apache2/certs/key.pem; fi \
+    && if [ -f /etc/apache2/certs/external/ca.crt  ]; then cp /etc/apache2/certs/external/ca.crt /etc/apache2/certs/truststore.pem; fi \
+    && if [ -f /etc/apache2/certs/external/tls.crt  ]; then cp /etc/apache2/certs/external/tls.crt /etc/apache2/certs/keystore.pem; fi \
+    && if [ -f /etc/apache2/certs/external/tls.key  ]; then cp /etc/apache2/certs/external/tls.key /etc/apache2/certs/key.pem; fi \
     && /usr/sbin/apache2ctl -D FOREGROUND
