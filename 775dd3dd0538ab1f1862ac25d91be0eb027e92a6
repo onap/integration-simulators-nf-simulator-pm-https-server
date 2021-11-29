@@ -1,0 +1,7 @@
+Code-Review+2: Bogumil Zebek <bogumil.zebek@nokia.com>
+Verified+1: Krzysztof Kuzmicki <krzysztof.kuzmicki@nokia.com>
+Submitted-by: Krzysztof Kuzmicki <krzysztof.kuzmicki@nokia.com>
+Submitted-at: Mon, 29 Nov 2021 09:06:34 +0000
+Reviewed-on: https://gerrit.onap.org/r/c/integration/simulators/nf-simulator/pm-https-server/+/125954
+Project: integration/simulators/nf-simulator/pm-https-server
+Branch: refs/heads/master
